@@ -58,3 +58,42 @@ JOIN player_match pm ON m.match_id = pm.match_id AND b.striker = pm.player_id
 JOIN player p ON p.player_id = pm.player_id
 GROUP BY p.player_name, m.season_year
 ORDER BY m.season_year, total_runs DESC;
+
+## 🧮 Key Analysis & Insights
+
+### 🎯 2. Most Economical Bowlers in Powerplay
+Calculated bowlers with the lowest average runs per ball in overs 1–6.  
+Visualized using a bar chart.
+
+### 🧠 3. Toss Impact on Match Outcome
+Analyzed whether the team winning the toss also won the match.  
+Visualized using Seaborn countplot.
+
+### 💪 4. Average Runs by Batsmen in Winning Matches
+Measured how consistent players were in matches where their team won.
+
+### 🏟️ 5. Scores by Venue
+Shows average and highest match totals per venue to identify high-scoring grounds.
+
+### 🚨 6. Dismissal Types
+Counts of different dismissal methods (caught, bowled, LBW, etc.) — visualized with Seaborn.
+
+### 🧢 7. Team Performance After Winning Toss
+Analyzes how teams perform after winning the toss.
+
+## 📈 Visualizations
+Visual insights built with Matplotlib and Seaborn include:
+- Top Economical Bowlers in Powerplay  
+- Impact of Winning Toss  
+- Top 10 Batsmen (Average Runs in Wins)  
+- Average Scores by Venue  
+- Most Frequent Dismissal Types  
+- Team Performance After Toss  
+
+## 🧰 How to Run
+
+**Clone the Repository**  
+```bash
+git clone https://github.com/NayansiT/IPL-Data-Analysis.git
+cd IPL-Data-Analysis
+
