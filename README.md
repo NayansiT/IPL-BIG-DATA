@@ -58,6 +58,7 @@ JOIN player_match pm ON m.match_id = pm.match_id AND b.striker = pm.player_id
 JOIN player p ON p.player_id = pm.player_id
 GROUP BY p.player_name, m.season_year
 ORDER BY m.season_year, total_runs DESC;
+```
 
 ## 🧮 Key Analysis & Insights
 
